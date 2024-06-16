@@ -71,4 +71,5 @@ trimLeft: ƒ trimStart()
 trimRight: ƒ trimEnd()
 trimStart: ƒ trimStart()
 valueOf: ƒ valueOf()
+
 */
