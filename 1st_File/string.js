@@ -2,6 +2,9 @@ let name = "Birjesh Gupta"
 let repoCount = 40
 
 console.log(`My name is ${name} and my total repo on github is ${repoCount}`)
+let count = `${repoCount}`
+
+console.log(typeof count)  // ${} convert any datatype to string
 
 let word = new String("Birjesh")
 console.log(word)
@@ -71,5 +74,13 @@ trimLeft: ƒ trimStart()
 trimRight: ƒ trimEnd()
 trimStart: ƒ trimStart()
 valueOf: ƒ valueOf()
-
 */
+
+
+//example:-
+
+let val = true
+let aa = `${val}`
+console.log(typeof aa);  // ${} convert datatypes into string
+console.log(aa);
+console.log(val);
