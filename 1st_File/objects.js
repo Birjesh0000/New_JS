@@ -175,3 +175,53 @@ console.log(ourObj.hasOwnProperty('course'))
 
 
 
+
+
+
+
+
+/************************            DESTRUCTURING OF OBJECTS                  ***************/
+
+//Destructuring  is a useful JavaScript feature to extract properties from objects and bind them to variables. 
+//Even better, object destructuring can extract multiple properties in a single statement, can access properties 
+//from nested objects, and can set a default value if the property doesn't exist
+
+const myObject2 = {
+    course : "Js",
+    fee : 2100,
+    time : 210,
+}
+
+      //key     //object name
+const {course} = myObject2   // use of curly braces(which contains key) for destructuring of object.
+console.log(course)
+
+const {course : co} = myObject2   // key name can be assigned to any variable(here -> co).
+console.log(co)
+
+
+
+
+
+
+//// API IN JSON FORMATE
+
+// {   // this is method to declare api => similar to object
+//     "name" : "Birjesh Gupta",
+//     "branch" : "EE",
+//     "age" : 20,
+// }
+
+
+
+// [   // this is another method to declare api  => similar to arrays
+//     {
+
+//     },
+//     {
+
+//     },
+//     {
+
+//     }
+// ]
