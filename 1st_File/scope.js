@@ -34,3 +34,62 @@ In a browser environment, the global scope is represented by the window object. 
 in the global scope is automatically attached to the window object.
 
 */  
+
+
+
+// when we define nested function, or nested loop , or any nested condition , then variable decalred in outer function, loop 
+// can  be accessed by inner function, or loop, but inverse is not true.
+
+function one(){
+    const var1 = 123
+    function two(){
+        const var2 = "Birjesh"
+        console.log(var1);
+    }
+
+    // console.log(var2)   // => this give error , bcz var2 is valid only inside function two
+
+    two()
+}
+
+one()
+
+
+
+// use of conditions
+
+if(true){
+    const val1 = "Birjesh"
+    if(val1 === "Birjesh"){
+        const val2 = 21
+        console.log(`${val2} val1`)
+    }
+    //console.log(val2)  //  => this give error bcz the scope of val2 is only inside the inner if condition.
+}
+
+//console.log(val1)  // => this give error bcz the scope of val1 is only inside the outer if condition.
+
+
+
+
+/*************  IMPORTANT CONCEPTS      ************/
+//  1:-
+
+console.log(myFun3(5))  // this can also call the function and print the result
+
+function myFun3(num){
+    return num*3
+}
+
+console.log(myFun3(2))  //this can also call the function and print the result
+
+
+// 2:-
+
+//console.log(sumVal(15))   // in below type defined functioin , function call should be present after the declaration of function
+
+const sumVal =  function(num){   //  => in this , function value is stored inside the variable, this also called function and sometimes called expression
+    return num+5
+}
+
+console.log(sumVal(15))
